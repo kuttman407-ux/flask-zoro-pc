@@ -1,0 +1,32 @@
+<header class="p-3 bg-success bg-gradient text-white shadow-sm">
+    <div
+        class="container d-flex flex-wrap align-items-center justify-content-between"
+    >
+        <a
+            href="/"
+            class="d-flex align-items-center text-white text-decoration-none fs-4 fw-bold gap-2"
+        >
+            <img
+                src="{{ url_for('static', filename='images/zoro2.jpg') }}"
+                alt="ZORO PC Logo"
+                width="50"
+                height="50"
+                class="border border-secondary shadow-sm"
+                style="object-fit: cover"
+            />
+            <span>ZORO PC</span>
+        </a>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a href="/" class="nav-link active bg-white text-success">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-white">Каталог</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-white">Контакты</a>
+            </li>
+        </ul>
+    </div>
+</header>

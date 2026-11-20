@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block title %}Главная — ZORO PC{% endblock %}
+
+{% block body %}
+<div class="p-5 mb-4 bg-success bg-gradient rounded-3 shadow-sm border">
+    <h1 class="display-5 fw-bold text-white">Добро пожаловать в ZORO PC</h1>
+    <p class="col-md-8 fs-5 text-white">
+        Здесь вы найдете лучшие сборки игровых ПК и комплектующие.
+    </p>
+    <button class="btn btn-light btn-lg text-success" type="button">Перейти в каталог</button>
+</div>
+
+<div class="row g-4">
+    <div class="col-md-4 mb-5">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Игровые ПК</h5>
+                <p class="card-text">Готовые сборки с официальной гарантией.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-5">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Комплектующие</h5>
+                <p class="card-text">Видеокарты, процессоры и оперативная память.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-5">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Периферия</h5>
+                <p class="card-text">Игровые клавиатуры, мыши и гарнитуры.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="mb-5">
+    
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        
+        <!-- ПК 1 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm border-0 rounded-3">
+                <img src="{{ url_for('static', filename='images/pc1.jpg') }}" 
+                     class="card-img-top p-2 rounded-4" 
+                     alt="ZORO PC 1"
+                     style="height: 280px; object-fit: cover;">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold text-dark fs-4">ZORO PC 1</h5>
+                    <p class="card-text text-muted flex-grow-1">Intel Core i5 / GTX 1660 Super / 16GB RAM / 512GB SSD</p>
+                    <div class="mt-3 pt-3 border-top d-flex justify-content-between align-items-center">
+                        <span class="fs-4 fw-bold text-success">45 000 сом</span>
+                        <button class="btn btn-success px-4 rounded-pill">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ПК 2 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm border-0 rounded-3">
+                <img src="{{ url_for('static', filename='images/pc2.jpg') }}" 
+                     class="card-img-top p-2 rounded-4" 
+                     alt="ZORO PC 2"
+                     style="height: 280px; object-fit: cover;">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold text-dark fs-4">ZORO PC 2</h5>
+                    <p class="card-text text-muted flex-grow-1">AMD Ryzen 5 / RTX 4060 / 16GB RAM / 1TB SSD</p>
+                    <div class="mt-3 pt-3 border-top d-flex justify-content-between align-items-center">
+                        <span class="fs-4 fw-bold text-success">75 000 сом</span>
+                        <button class="btn btn-success px-4 rounded-pill">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ПК 3 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm border-0 rounded-3">
+                <img src="{{ url_for('static', filename='images/pc3.jpg') }}" 
+                     class="card-img-top p-2 rounded-4" 
+                     alt="ZORO PC 3"
+                     style="height: 280px; object-fit: cover;">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold text-dark fs-4">ZORO PC 3</h5>
+                    <p class="card-text text-muted flex-grow-1">Intel Core i7 / RTX 4070 / 32GB RAM / 1TB NVMe</p>
+                    <div class="mt-3 pt-3 border-top d-flex justify-content-between align-items-center">
+                        <span class="fs-4 fw-bold text-success">120 000 сом</span>
+                        <button class="btn btn-success px-4 rounded-pill">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ПК 4 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm border-0 rounded-3">
+                <img src="{{ url_for('static', filename='images/pc4.jpg') }}" 
+                     class="card-img-top p-2 rounded-4" 
+                     alt="ZORO PC 4"
+                     style="height: 280px; object-fit: cover;">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold text-dark fs-4">ZORO PC 4</h5>
+                    <p class="card-text text-muted flex-grow-1">AMD Ryzen 7 / RTX 4080 Super / 32GB RAM / 2TB NVMe</p>
+                    <div class="mt-3 pt-3 border-top d-flex justify-content-between align-items-center">
+                        <span class="fs-4 fw-bold text-success">180 000 сом</span>
+                        <button class="btn btn-success px-4 rounded-pill">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+{% endblock %}
